@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Autos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .auto {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .detalles {
+            display: none; /* Ocultamos inicialmente los detalles */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .auto:hover .detalles {
+            display: block; /* Mostramos los detalles al pasar el mouse */
+        }
+
+        .auto img {
+            width: 100%; /* Aseguramos que la imagen ocupe todo el ancho */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Renta de Autos</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item active"><a class="nav-link" href="autos.html">Autos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="mantenimiento.html">Mantenimiento</a>
+                        <a class="dropdown-item" href="montallantas.html">Montallantas</a>
+                        <a class="dropdown-item" href="alineacion.html">Alineación y Balanceo</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="galeria text-center">
+    <h2>Nuestros Autos Disponibles</h2>
+    
+    <div class="row">
+        <!-- Auto 1 -->
+        <div class="col-md-4">
+            <div class="auto">
+                <img src="imagenes/auto_1.jpg" alt="Auto 1" class="img-fluid">
+                <div class="detalles">
+                    <p>Auto 1 - $50.000/día</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auto 2 -->
+        <div class="col-md-4">
+            <div class="auto">
+                <img src="imagenes/auto_2.jpg" alt="Auto 2" class="img-fluid">
+                <div class="detalles">
+                    <p>Auto 2 - $60.000/día</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auto 3 -->
+        <div class="col-md-4">
+            <div class="auto">
+                <img src="imagenes/auto_3.jpg" alt="Auto 3" class="img-fluid">
+                <div class="detalles">
+                    <p>Auto 3 - $70.000/día</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Auto 4 -->
+        <div class="col-md-4">
+            <div class="auto">
+                <img src="imagenes/auto_4.jpg" alt="Auto 4" class="img-fluid">
+                <div class="detalles">
+                    <p>Auto 4 - $80.000/día</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auto 5 -->
+        <div class="col-md-4">
+            <div class="auto">
+                <img src="imagenes/auto_5.jpg" alt="Auto 5" class="img-fluid">
+                <div class="detalles">
+                    <p>Auto 5 - $90.000/día</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auto 6 -->
+        <div class="col-md-4">
+            <div class="auto">
+                <img src="imagenes/auto_6.jpg" alt="Auto 6" class="img-fluid">
+                <div class="detalles">
+                    <p>Auto 6 - $100.000/día</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Renta de Autos &copy; 2024</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

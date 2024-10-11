@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montallantas - Renta de Automóviles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .servicio {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .detalles {
+            display: none; /* Ocultamos inicialmente los detalles */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .servicio:hover .detalles {
+            display: block; /* Mostramos los detalles al pasar el mouse */
+        }
+
+        .servicio img {
+            width: 100%; /* Aseguramos que la imagen ocupe todo el ancho */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Renta de Autos</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="autos.html">Autos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item active"><a class="nav-link" href="montallantas.html">Montallantas</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="mantenimiento.html">Mantenimiento</a>
+                        <a class="dropdown-item" href="alineacion.html">Alineación y Balanceo</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="galeria text-center">
+    <h2>Servicios de Montallantas Disponibles</h2>
+    
+    <div class="row">
+        <!-- Servicio 1 -->
+        <div class="col-md-4">
+            <div class="servicio">
+                <img src="imagenes/montallantas_1.jpg" alt="Montaje de Llantas" class="img-fluid">
+                <div class="detalles">
+                    <p>Montaje de Llantas - $20.000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="col-md-4">
+            <div class="servicio">
+                <img src="imagenes/montallantas_2.jpg" alt="Desmontaje de Llantas" class="img-fluid">
+                <div class="detalles">
+                    <p>Desmontaje de Llantas - $15.000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="col-md-4">
+            <div class="servicio">
+                <img src="imagenes/montallantas_3.jpg" alt="Balanceo de Llantas" class="img-fluid">
+                <div class="detalles">
+                    <p>Balanceo de Llantas - $25.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Renta de Autos &copy; 2024</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
